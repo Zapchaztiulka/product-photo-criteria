@@ -1,0 +1,29 @@
+{
+  "name": "Zapchastulka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss src/css/tailwind.css -o dist/assets/css/main.css",
+    "watch": "postcss src/css/tailwind.css -o dist/assets/css/main.css --watch",
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss src/css/tailwind.css -o dist/assets/css/main.css --watch\"  \"live-server ./dist\"",
+    "dev": "cross-env NODE_ENV=development postcss src/css/tailwind.css -o dist/assets/css/main.css",
+    "prod": "cross-env NODE_ENV=production postcss src/css/tailwind.css -o dist/assets/css/main.css",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "tailwindcss": "^3.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "cssnano": "^6.0.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7"
+  }
+}
