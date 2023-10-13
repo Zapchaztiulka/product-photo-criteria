@@ -3,13 +3,4 @@
 @import './styles.css';
 @import 'tailwindcss/utilities';
 
-@layer base {
-  :root {
-    --color-brand: #1570EF;
-    --color-primary: #1C1F23;
-    --color-secondary: #41464C;
-    --color-success: #12B76A;
-    --color-error: #F04438;
-    --color-tertiary: #6B7075;
-  }
-}
+

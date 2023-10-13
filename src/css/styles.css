@@ -1,5 +1,66 @@
-
-
-.goldsssss {
-    color: red;
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.ttf");
+  font-weight: 700;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+body {
+  font-family: Inter;
+  font-size: 16px;
+}
+
+.menu-container {
+    width: 274px;
+}
+
+.content-container {
+  margin-left: 304px;
+}
+.title-h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+.title-h3 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+.creteria-block__description{
+    font-size: 16px;
+}
+.creteria-block__content{
+    padding: 42px 87px;
+    border: 1px solid #EAECF0;
+    background:  #F9FAFB;
+}
+
+
+@media (max-width: 1024px) { 
+    /* aside {
+        display: none;
+    } */
+    .content-container {
+        margin-left: 0;
+    }
+    .creteria-block__content{
+        padding: 20px 30px;
+    } 
+}
+@media (max-width: 1024px) {
+
+ }

@@ -7,9 +7,282 @@
     <title>Product Criteria</title>
   </head>
 
-  <body class="flex items-center justify-center h-screen">
-    <div class="p-10 bg-gray-100">
-      <h1 class="text-2xl font-semibold">Hello World</h1>
+  <body class="h-screen font-inter">
+    <div class="container md:py-6 xl:py-10 ">
+      <!-- <button
+        data-drawer-target="default-sidebar"
+        data-drawer-toggle="default-sidebar"
+        aria-controls="default-sidebar"
+        type="button"
+        class="text-gray-500 hover:bg-gray-100 focus:ring-gray-200 ml-3 mt-2 inline-flex items-center rounded-lg p-2 text-sm focus:outline-none focus:ring-2 lg:hidden"
+      >
+        <span class="sr-only">Open sidebar</span>
+        <svg
+          class="h-6 w-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+          ></path>
+        </svg>
+      </button> -->
+
+      <aside
+        id="default-sidebar"
+        class="menu-container fixed top-0 z-40 -translate-x-full transition-transform  lg:translate-x-0 pr-8 lg:pr-0 lg:pt-6"
+        aria-label="Sidebar"
+      >
+        <div class="h-full py-3">
+          <ul class="font-regular space-y-7 text-base text-primary">
+            <li>
+              <a href="#" class="p-1 text-base text-tertiary">
+                Критерії фото товарів
+              </a>
+            </li>
+            <li>
+              <a href="#" class="p-1 hover:text-tertiary">Фон зображення</a>
+            </li>
+
+            <li>
+              <a href="#" class="p-1 hover:text-tertiary">
+                Співвідношення сторін
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="p-1 hover:text-tertiary">
+                Розміщення товару на фото
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="p-1 hover:text-tertiary">
+                Кількість елементів на фотографії
+              </a>
+            </li>
+            <li>
+              <a href="#" class="p-1 hover:text-tertiary">
+                Якість фотографії
+              </a>
+            </li>
+            <li>
+              <a href="#" class="p-1 hover:text-tertiary">
+                Фотографії з розмірами товару
+              </a>
+            </li>
+            <li>
+              <a href="#" class="p-1 hover:text-tertiary">
+                Фотографії деталей товару
+              </a>
+            </li>
+          </ul>
+          <ul class="font-regular space-y-7 pt-12 text-base text-primary">
+            <li>
+              <a href="#" class="p-1 text-base text-tertiary">
+                Допоміжні матеріали
+              </a>
+            </li>
+            <li>
+              <a href="#" class="p-1 text-base text-primary">
+                Посилання на інструменти
+              </a>
+            </li>
+            <li>
+              <a href="#" class="p-1 text-base text-primary">
+                Відеоурок ознайомлення
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="content-container ">
+        <h2 class="title-h2">Критерії фото товарів</h2>
+        <div class="creteria-block mb-16">
+          <h3 class="title-h3">Фон зображення</h3>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+            Зображення з білим фоном або без фону (png).
+          </p>
+          <div
+            class="creteria-block__content grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/image21.png" alt="detail" />
+            <img src="assets/imgs/image16.png" alt="detail" />
+          </div>
+        </div>
+
+        <div class="creteria-block mb-16">
+          <h3 class="title-h3">Співвідношення сторін</h3>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+            Співвідношення сторін повинно бути 3:2 або 1:1.
+          </p>
+          <div
+            class="creteria-block__content grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/ratio1.png" alt="ratio" />
+            <img src="assets/imgs/ratio2.png" alt="ratio" />
+          </div>
+        </div>
+
+        <div class="creteria-block mb-16">
+          <h3 class="title-h3">Розміщення товару на фото</h3>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+            Елемент повинен бути достатнього розміру та займати більшу частину
+            області фотографії.
+          </p>
+          <div
+            class="creteria-block__content mb-6 grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/detail2.png" alt="detail" />
+            <img src="assets/imgs/detail3.png" alt="detail" />
+          </div>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+            Не допускати обрізання частин елементу за межі фотографії.
+          </p>
+          <div
+            class="creteria-block__content mb-6 grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/detail4.png" alt="detail" />
+            <img src="assets/imgs/detail3.png" alt="detail" />
+          </div>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+            Елемент повинен розміщуватися в центрі.
+          </p>
+          <div
+            class="creteria-block__content mb-6 grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/detail6.png" alt="detail" />
+            <img src="assets/imgs/detail3.png" alt="detail" />
+          </div>
+        </div>
+
+        <div class="creteria-block mb-16">
+          <h3 class="title-h3">
+            Кількість елементів на фотографії
+          </h3>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+            Не розміщувати фотографії, де зображено декілька різних елементів.
+            Дивлячись на фотографію, має бути зрозуміло, який товар продається.
+          </p>
+         <div
+            class="creteria-block__content grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/detail7.png" alt="detail" />
+            <img src="assets/imgs/detail3.png" alt="detail" />
+          </div>
+        </div>
+
+         <div class="creteria-block mb-16">
+          <h3 class="title-h3">
+           Якість фотографії
+          </h3>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+           Елемент повинен бути достатньо чітким та хорошої якості, аби його можна розглянути.
+          </p>
+         <div
+            class="creteria-block__content grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/detail8.png" alt="detail" />
+            <img src="assets/imgs/detail3.png" alt="detail" />
+          </div>
+        </div>
+
+        <div class="creteria-block mb-16">
+          <h3 class="title-h3">
+          Фотографії з розмірами товару
+          </h3>
+          <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+          Якщо є потреба в фотографії із зображенням реальних розмірів товару, краще схематично зобразити за допомогою ліній та стрілок розміри елементів.
+          </p>
+         <div
+            class="creteria-block__content grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/detail9.png" alt="detail" />
+            <img src="assets/imgs/detail10.png" alt="detail" />
+          </div>
+        </div>
+
+        <div class="creteria-block mb-16">
+          <h3 class="title-h3">
+         Фотографії деталей товару
+          </h3>
+          <p
+            class="font-regular creteria-block__description text-secondary"
+          >
+         Якщо це фото деталей товару, тобто додаткове фото дрібних частин товару і т.д, то елемент на фото може бути обрізаним чи показаним частково.
+          </p>
+           <p
+            class="font-regular creteria-block__description mb-4 text-secondary"
+          >
+        Проте фото деталей товару — додаткове. Воно не може виступати головною фотографією, яка розміщуєтьяс в картці товару в каталозі.
+          </p>
+         <div
+            class="creteria-block__content grid grid-cols-2 justify-items-center md:gap-x-28 gap-y-6 gap-x-5"
+          >
+            <img src="assets/imgs/close.svg" alt="wrong" />
+            <img src="assets/imgs/check.svg" alt="correct" />
+            <img src="assets/imgs/detail11.png" alt="detail" />
+            <img src="assets/imgs/detail12.png" alt="detail" />
+          </div>
+        </div>
+
+        <h2 class="title-h2">Допоміжні матеріали</h2>
+        <div class="mb-16">
+          <h3 class="title-h3">Посилання на інструменти</h3>
+          <a
+            class="font-regular creteria-block__description mb-4 text-secondary hover:text-tertiary"
+            href="#"
+          >
+            Тут буде текст посилання.
+          </a>
+        </div>
+        <div class="mb-16">
+          <h3 class="title-h3">Відеоурок ознайомлення</h3>
+          <a
+            class="font-regular creteria-block__description mb-4 text-secondary hover:text-tertiary"
+            href="#"
+          >
+            Тут буде текст посилання.
+          </a>
+        </div>
+      </div>
     </div>
   </body>
 
