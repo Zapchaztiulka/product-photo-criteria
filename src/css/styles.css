@@ -18,14 +18,16 @@
   src: url("../fonts/Inter-SemiBold.ttf");
   font-weight: 600;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Inter;
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 .menu-container {
-    width: 274px;
+  width: 274px;
 }
 
 .content-container {
@@ -41,23 +43,33 @@ body {
   margin-bottom: 24px;
   font-weight: 400;
 }
-.creteria-block__description{
-    font-size: 16px;
+.creteria-block__description {
+  font-size: 16px;
 }
-.creteria-block__content{
-    padding: 42px 87px;
-    border: 1px solid #EAECF0;
-    background:  #F9FAFB;
+.creteria-block__content {
+  padding: 42px 87px;
+  border: 1px solid #eaecf0;
+  background: #f9fafb;
 }
 a.active {
-  color: #1849A9; 
+  color: #1849a9;
 }
 
-@media (max-width: 1024px) { 
-    .content-container {
-        margin-left: 0;
-    }
-    .creteria-block__content{
-        padding: 20px 30px;
-    } 
+@media (max-width: 1024px) {
+  .content-container {
+    margin-left: 0;
+  }
+  .creteria-block__content {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 600px) {
+  .title-h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .title-h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
 }
