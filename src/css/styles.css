@@ -21,6 +21,7 @@
 body {
   font-family: Inter;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .menu-container {
@@ -48,12 +49,11 @@ body {
     border: 1px solid #EAECF0;
     background:  #F9FAFB;
 }
-
+a.active {
+  color: #1849A9; 
+}
 
 @media (max-width: 1024px) { 
-    /* aside {
-        display: none;
-    } */
     .content-container {
         margin-left: 0;
     }
@@ -61,6 +61,3 @@ body {
         padding: 20px 30px;
     } 
 }
-@media (max-width: 1024px) {
-
- }
